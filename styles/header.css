@@ -1,0 +1,90 @@
+.menuzin {
+    width: 24px;
+    height: 24px;
+    background-image: url("../imagens do site do city/3pontos.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block; 
+    
+}
+
+.container_botao:checked ~ .container_rotulo > .menuzin {
+    background-image: url("../imagens do site do city//chris_jumpscare.svg");
+}
+
+.container_botao:checked ~ .container_rotulo {
+    background: var(--laranjinha);
+}
+
+.cabeção{
+    background-color: var(--cinza);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.container {
+   display: flex;
+   align-items: center;
+}
+
+.container_image {
+    padding: 1em;
+}
+
+.lista-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 40vw;
+}
+
+.container_botao:checked~.lista-menu {
+    display: block;
+}
+
+.lista-menu__titulo, 
+.lista-menu__idem {
+    padding: 1em;
+    background-color: var(--white);
+}
+
+.lista-menu__titulo {
+    color: var(--bluezao);
+    font-weight: 700;
+}
+
+.lista-menu__link {
+    background: var(--cinzao);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+}
+
+.container_botao {
+    display: none;
+}
+
+.container_titulo {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .container_titulo {
+        display: block;
+    }
+    
+.container_titulo_negrito {
+    font-family:var(--fonte-principal) ;
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--bluezao);
+    }
+
+    
+    
+}
+

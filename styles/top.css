@@ -1,0 +1,42 @@
+.top {
+    background: var(--azul-morto);
+    text-align: center;
+    padding: 1.5em 0;
+}
+
+.top_titulo {
+    color: var(--white);
+    font-weight: 700;
+    font-size: 22px;
+    padding: 0.5em 0;
+}
+
+.top_lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.top_1 {
+    margin: 2em 0.5em;
+}
+
+.top_link {
+    color: var(--white);
+    padding: 1em;
+    background-color: var(--laranjinha);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+@media screen and (min-width: 1024px) {
+     .top_titulo{
+        font-size: 32px;
+     }
+
+    .top_link{
+        font-size: 24px;
+    }
+
+}

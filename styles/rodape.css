@@ -1,0 +1,39 @@
+hr {
+    margin: 0;
+}
+
+.rodape {
+    background-color: var(--cinza);
+    padding: 1em;
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--bluezao);
+}
+
+.lista_rodape {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .lista_rodape {
+        display: block;
+    }
+    
+    .rodape_titulo {
+        font-size: 40px;
+    }
+
+    .rodape {
+        display: flex;
+        justify-content: space-around;
+    }
+  
+    .lista_rodape_item {
+        margin: 0.8em 0;
+    }
+
+    .lista_rodape_titulo {
+        font-size: 22px;
+        color: var(--cinzao);
+    }
+}
